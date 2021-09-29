@@ -1,0 +1,30 @@
+/*----- Colors -----*/
+$clear:             #ffffff;
+$dark:              #080C36;
+
+$primary:           #00F0FF;
+$secondary:         #BBC1FF;
+
+$grey:				#e5e5e5;
+$light-grey:		#f9f9f9;
+
+/*----- Fonts -----*/
+$bai-jamjuree: 'Bai Jamjuree', Arial, Verdana, sans-serif;
+$font-family-sans-serif: $bai-jamjuree;
+
+/*----- Transitions -----*/
+$linear:      all 0.2s linear;
+$ease:        all 0.2s ease;
+$ease-in:     all 0.2s ease-in;
+$ease-in-out: all 0.2s ease-in-out;
+$ease-out:    all 0.2s ease-out;
+
+$grid-breakpoints: (
+	xxs: 0,
+	xs: 576px,
+	sm: 768px,
+	md: 992px,
+	lg: 1200px,
+	xl: 1350px,
+	xxl: 1480px,
+);

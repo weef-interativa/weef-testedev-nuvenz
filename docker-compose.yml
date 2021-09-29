@@ -1,0 +1,30 @@
+version: "3.5"
+services:
+  mysql:
+    image: mysql:5.6
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: wordpress
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
+  wordpress:
+    depends_on:
+      - mysql
+    image: wordpress
+    ports:
+      - 80:80
+    volumes:
+      - type: bind
+        source: ./
+        target: /var/www/html
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: example
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME', 'http://localhost' );
+        define('WP_SITEURL', 'http://localhost' );
+        define( 'WP_MEMORY_LIMIT', '1024M' );

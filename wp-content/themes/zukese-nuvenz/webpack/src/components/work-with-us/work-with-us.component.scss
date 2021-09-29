@@ -1,0 +1,199 @@
+.work-with-us{
+
+    &__text{
+        margin-left: -60px;
+    }
+
+    &__figureA{
+        width: 144px;
+        height: 144px;
+        position: absolute;
+        overflow: hidden;
+        top: 72px;
+        left: 107px;
+        z-index: 1;
+        margin: 0;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease-out;
+        }
+    }
+    &__figureB{
+        width: 89px;
+        height: 89px;
+        position: absolute;
+        overflow: hidden;
+        top: 85px;
+        left: 511px;
+        z-index: 1;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease-out;
+        }
+    }
+    &__figureC{
+        width: 105px;
+        height: 105px;
+        position: absolute;
+        overflow: hidden;
+        top: 537px;
+        left: 119px;
+        z-index: 1;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease-out;
+        }
+    }
+    &__figureD{
+        width: 116px;
+        height: 116px;
+        position: absolute;
+        overflow: hidden;
+        top: 572px;
+        left: 459px;
+        z-index: 1;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease-out;
+        }
+    }
+    &__figure-center{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        overflow: hidden;
+        top: 229px;
+        left: 229px;
+        z-index: 1;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s ease-out;
+        }
+    }
+    &__circle3{
+        background: url('assets/images/ellipse-small.svg') no-repeat center;
+        background-size: cover;
+        width: 448px;
+        height: 448px;
+        position: absolute;
+        top: 155px;
+        left: 155px;
+        -webkit-animation: rotate-center 100s linear infinite ;
+        animation: rotate-center 100s linear infinite ;
+    }
+
+    &--bg{
+        padding: 0;
+        min-height: 765px;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: '';
+            background: url('assets/images/ellipse-large.svg') no-repeat center;
+            position: absolute;
+            width: 758px;
+            height: 758px;
+            top: 0;
+            -webkit-animation: rotate-center 100s linear infinite ;
+            animation: rotate-center 100s linear infinite ;
+        }
+        &::after{
+            content: '';
+            background: url('assets/images/ellipse-medium.svg') no-repeat center;
+            position: absolute;
+            width: 100%;
+            height: 608px;
+            top: 75px;
+            -webkit-animation: rotate-center 100s linear infinite reverse;
+            animation: rotate-center 100s linear infinite reverse;
+        }
+    }
+    .container{
+        position: relative;
+    }
+    @-webkit-keyframes rotate-center {
+        0% {
+          -webkit-transform: rotate(0);
+                  transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+    }
+      
+    @keyframes rotate-center {
+        0% {
+          -webkit-transform: rotate(0);
+                  transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        padding-top: 0;
+        &--bg{
+            display: none;
+        }
+        &__text{
+            margin-left: 0;
+        }
+        &__hat{
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__title{
+            font-size: 28px;
+            line-height: 29px;
+        }
+        &__excerpt{
+            p{
+                font-size: 18px;
+                line-height: 29px;
+            }
+        }
+    }
+      
+}
+
+
+.modal-content{
+    background-color: $dark;
+}
+
+.modal-title {
+    color: $clear;
+    font-size: 26px;
+}
+
+.modal-header{
+    padding: 32px 32px 8px;
+    border-bottom: 0;
+}
+
+.modal-body{
+    padding: 0 32px;
+}
+
+.close{
+    color: $clear;
+}

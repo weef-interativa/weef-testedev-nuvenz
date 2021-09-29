@@ -1,0 +1,28 @@
+
+//--- Helpers
+@import './helpers/fonts.scss';
+@import './helpers/variables.scss';
+@import './helpers/mixins.scss';
+@import './helpers/helpers.scss';
+
+//-- Vendors
+@import './vendor/vendor';
+
+//-- Components
+@import './components/header/header.component.scss';
+@import './components/footer/footer.component.scss';
+@import './components/section/section.component.scss';
+@import './components/work-with-us/work-with-us.component.scss';
+@import './components/main-title/main-title.component.scss';
+@import './components/planning/planning.component.scss';
+@import './components/technologies/technologies.component.scss';
+@import './components/portfolio/portfolio.component.scss';
+@import './components/contact/contact.component.scss';
+@import './components/form/form.component.scss';
+@import './components/card-portfolio/card-portfolio.component.scss';
+@import './components/slider-portfolio/slider-portfolio.component.scss';
+@import './components/content/content.component.scss';
+@import './components/ambientation/ambientation.component.scss';
+
+//-- Pages
+@import './pages/home/home.page.scss';

@@ -1,0 +1,65 @@
+.contact{
+    
+    padding: 34px 0 64px 0;
+    &__title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 50px;
+        color: $clear;
+        margin: 20px 0 48px 0;
+    }
+    &__excerpt{
+        p{
+            margin-top: 53px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            color: $secondary;
+            &:last-child{
+                margin-top: 48px;
+            }
+        }
+        &--contato{
+            p{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                color: $secondary;
+                margin-bottom: 20px;
+            }
+        }
+        &--informacao{
+            p,a{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                color: $clear;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__texto{
+        margin: 0;
+    }
+    &__hat{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.09em;
+        color: $primary;
+    }
+
+    @media (max-width: 768px) {
+        &__excerpt--contato p {
+            margin-bottom: 0;
+        }
+        &__hat{
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__title{
+            font-size: 28px;
+            line-height: 29px;
+        }
+    }
+}

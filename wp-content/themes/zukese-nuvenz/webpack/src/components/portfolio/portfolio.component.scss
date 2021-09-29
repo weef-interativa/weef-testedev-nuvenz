@@ -1,0 +1,45 @@
+.portfolio{
+    padding: 64px 0 0 0;
+    &__title{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 42px;
+        color: $clear;
+        margin: 20px 0 20px 0;
+    }
+    &__excerpt{
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            color: $secondary;
+        }
+    }
+    &__texto{
+        margin: 0;
+    }
+    &__hat{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.09em;
+        color: $primary;
+    }
+
+    @media (max-width: 768px) {
+        &__hat{
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__title{
+            font-size: 28px;
+            line-height: 29px;
+        }
+        &__excerpt{
+            p{
+                font-size: 18px;
+                line-height: 29px;
+            }
+        }
+    }
+}

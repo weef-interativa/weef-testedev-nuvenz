@@ -1,0 +1,132 @@
+.content{
+    padding: 16px 0;
+    &__title{
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: 600;
+        color: $clear;
+        text-align: center;
+        letter-spacing: 0.02em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 208px 72px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        color: $clear;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: $clear;
+        margin-bottom: 20px;
+    }
+    h4{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: $clear;
+        margin-bottom: 20px;
+    }
+    h5{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: $clear;
+        margin-bottom: 20px;
+    }
+    h6{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        color: $clear;
+        margin-bottom: 20px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: $secondary;
+        margin-bottom: 56px;
+        strong{
+            font-weight: 700;
+        }
+        em{
+            font-style: italic;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    blockquote{
+        padding: 16px 32px;
+        font-weight: normal;
+        border-left: 3px solid $primary;
+        font-size: 25px;
+        line-height: 32px;
+        color: $secondary;
+        margin: 40px 0;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    figure{
+        width: 100%;
+        margin: 40px 0;
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+        figcaption{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #8C8C8C;
+            margin-top: 8px;
+        }
+    }
+    a{
+        color: $primary;
+        &:hover{
+            color: $clear;
+        }
+    }
+    ul, ol {
+        margin-bottom: 56px;
+        padding-left: 20px;
+        li{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            color: $secondary;
+            margin-bottom: 16px;
+        }
+    }
+    @media (max-width: 768px){
+        blockquote {
+            padding: 15px 20px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        h3 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        
+        figure {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}

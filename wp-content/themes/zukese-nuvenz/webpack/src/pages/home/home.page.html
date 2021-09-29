@@ -1,0 +1,383 @@
+{{> ../../layouts/head.layout.html }}
+
+{{> ../../components/header/header.component.html }}
+
+<main class="home">
+    {{> ../../components/main-title/main-title.component.html }}
+
+    <section class="section section--pattern-main pb-0" id="sobre">
+        <div class="container">
+            <div class="row flex-column-reverse flex-md-row justify-content-center align-items-center">
+                <div class="col-12 col-md-7">
+                    <div class="section__selo wow zoomIn" data-wow-duration="0.6s" data-wow-delay="0.16s">
+                        <img src="assets/images/selo-angola.svg" alt="">
+                    </div>
+                    <div class="section__figure embed-responsive embed-responsive-16by9 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.10s">
+                        <video autoplay loop>
+                            <source src="assets/videos/video-sobre.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="section__sobre-nos-texto">
+                        <h2 class="section__hat wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.10s">
+                            sobre nós
+                        </h2>
+                        <h3 class="section__title--sobre wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s">
+                            estamos em constante transformação. Somos nuvenz!
+                        </h3>
+                    </div>
+                    <div class="section__excerpt wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+                        <p>
+                            a Nuvenz é uma produtora de software especializada na criação e desenvolvimento de sites, webapps e aplicativos móveis com foco em inovação, design e tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section--second-circle">
+                <div class="row justify-content-center align-items-center section--missao">
+                    <div class="col-12 col-md-8 ">
+                        <h3 class="section__title--missao wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+                            nossa missão é acelerar a transformação digital das empresas de Angola através da oferta de serviços de nível mundial
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section planning" id="planejamento">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-5">
+                        <div class="planning__texto">
+                            <h2 class="planning__hat">
+                                planejamento & design
+                            </h2>
+                            <h3 class="planning__title">
+                                inteligência criativa para negócios inovadores
+                            </h3>
+                        </div>
+                        <div class="planning__excerpt">
+                            <div class="col-md-10 pl-0">
+                                <p>
+                                    ajudamos nossos clientes a construírem soluções digitais úteis e encantadoras
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="planning__texto--small">
+                            <figure>
+                                <img src="assets/images/icon-branding.svg" alt="">
+                            </figure>
+                            <div class="planning__content">
+                                <h4 class="planning__title--small">
+                                    Branding
+                                </h4>
+                                <div class="planning__excerpt--small">
+                                    <p>
+                                        Ullamcorper erat faucibus neque eget habitasse accumsan, fermentum adipiscing interdum
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="planning__texto--small">
+                            <figure>
+                                <img src="assets/images/icon-motion.svg" alt="">
+                            </figure>
+                            <div class="planning__content">
+                                <h4 class="planning__title--small">
+                                    Motion design
+                                </h4>
+                                <div class="planning__excerpt--small">
+                                    <p>
+                                        Fringilla sed sed arcu eu scelerisque consequat tortor lobortis turpis purus gravida  magna ut
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="planning__texto--small">
+                            <figure>
+                                <img src="assets/images/icon-marketing.svg" alt="">
+                            </figure>
+                            
+                            <div class="planning__content">
+                                <h4 class="planning__title--small">
+                                    Marketing digital
+                                </h4>
+                                <div class="planning__excerpt--small">
+                                    <p>
+                                        Vulputate gravida ut lorem sit sed malesuada volutpat et dictum urna commodo purus sed feugiat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="planning__texto--small">
+                            <figure>
+                                <img src="assets/images/icon-design.svg" alt="">
+                            </figure>
+                            
+                            <div class="planning__content">
+                                <h4 class="planning__title--small">
+                                    UX / UI design
+                                </h4>
+                                <div class="planning__excerpt--small">
+                                    <p>
+                                        Nulla ac convallis dictumst ullamcorper sagittis, sed in tincidunt justo, urna lacus
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--pattern-portfolio pb-0">
+        {{> ../../components/technologies/technologies.component.html }}
+
+        <div class="section portfolio" id="portfolio">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-3">
+                        <div class="portfolio__texto">
+                            <h2 class="portfolio__hat">
+                                portfolio
+                            </h2>
+                            <h3 class="portfolio__title">
+                                nossos trabalhos
+                            </h3>
+                        </div>
+                        <div class="portfolio__excerpt">
+                            <p>
+                                Confira alguns exemplos de projetos desenvolvidos pela equipe da Nuvenz
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="slider-portfolio__content">
+                            <div class="slider-portfolio slider-portfolio__items-0" id="slider-portfolio__items-0">
+                                <div class="slider-portfolio__item">
+                                    <div class="card-portfolio">
+                                        <a href="#" class="embed-responsive-item" data-toggle="modal" data-target="#modalImage-0">
+                                            <figure class="card-portfolio__figure">
+                                                <img src="assets/images/slider-portfolio-1.png" alt="">
+                                            </figure>
+                                            <div class="card-portfolio__content">
+                                                <h2 class="card-portfolio__title">Zukese App</h2>
+                                                <p class="card-portfolio__excerpt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in pellentesque condimentum.
+                                                </p>
+                                            </div>
+                                            <div class="card-portfolio__button">
+                                                Ver detalhes
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-portfolio__item">
+                                    <div class="card-portfolio">
+                                        <a href="#">
+                                            <figure class="card-portfolio__figure">
+                                                <img src="assets/images/slider-portfolio-2.png" alt="">
+                                            </figure>
+                                            <div class="card-portfolio__content">
+                                                <h2 class="card-portfolio__title">Zukese App</h2>
+                                                <p class="card-portfolio__excerpt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in pellentesque condimentum.
+                                                </p>
+                                            </div>
+                                            <div class="card-portfolio__button">
+                                                Ver detalhes
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-portfolio__item">
+                                    <div class="card-portfolio">
+                                        <a href="#">
+                                            <figure class="card-portfolio__figure">
+                                                <img src="assets/images/slider-portfolio-3.png" alt="">
+                                            </figure>
+                                            <div class="card-portfolio__content">
+                                                <h2 class="card-portfolio__title">Zukese App</h2>
+                                                <p class="card-portfolio__excerpt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in pellentesque condimentum.
+                                                </p>
+                                            </div>
+                                            <div class="card-portfolio__button">
+                                                Ver detalhes
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-portfolio__item">
+                                    <div class="card-portfolio">
+                                        <a href="#">
+                                            <figure class="card-portfolio__figure">
+                                                <img src="assets/images/slider-portfolio-1.png" alt="">
+                                            </figure>
+                                            <div class="card-portfolio__content">
+                                                <h2 class="card-portfolio__title">Zukese App</h2>
+                                                <p class="card-portfolio__excerpt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in pellentesque condimentum.
+                                                </p>
+                                            </div>
+                                            <div class="card-portfolio__button">
+                                                Ver detalhes
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-portfolio__item">
+                                    <div class="card-portfolio">
+                                        <a href="#">
+                                            <figure class="card-portfolio__figure">
+                                                <img src="assets/images/slider-portfolio-2.png" alt="">
+                                            </figure>
+                                            <div class="card-portfolio__content">
+                                                <h2 class="card-portfolio__title">Zukese App</h2>
+                                                <p class="card-portfolio__excerpt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in pellentesque condimentum.
+                                                </p>
+                                            </div>
+                                            <div class="card-portfolio__button">
+                                                Ver detalhes
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--pattern-contato contact">
+        
+        {{> ../../components/work-with-us/work-with-us.component.html }}
+        <div class="section contact">
+            <div class="container"  id="contato">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-5">
+                        <div class="contact__texto">
+                            <h2 class="contact__hat">
+                                contato
+                            </h2>
+                            <h3 class="contact__title">
+                                pronto para começar? entre em contato!
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="contact__excerpt--contato">
+                                    <p>telefone:</p>
+                                    <p>whatsapp:</p>
+                                    <p>email:</p>
+                                    <p>localização:</p>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="contact__excerpt--informacao">
+                                    <p>(+244) 924 100 100</p>
+                                    <p>(+244) 999 111 999</p>
+                                    <p>contato@nuvenz.com.ao</p>
+                                    <p>Rua Lorme ipsum, nº 229 Luanda, Angola</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="contact__excerpt">
+                            <div class="row">
+                                <div class="col-12 col-md-10">
+                                    <p>começe um projeto com a gente! Estamos aqui para trazer soluções incríveis para você</p>
+                                    <p>preencha os capos abaixo</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {{> ../../components/form/form.component.html }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalFormLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalForm">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="form">
+
+                    <!--div class="alert alert-danger">
+                        Ocorreu um problema no envio dos seus dados. Os erros foram destacados abaixo.
+                    </div>
+                    
+                    <div class="alert alert-success">
+                        Mensagem enviada com sucesso! :)
+                    </div-->
+                    <input type="text" name="name" id="name" placeholder="Nome">
+                
+                    <input type="tel" name="phone" id="phone" placeholder="Telefone">
+                    
+                    <input type="email" name="email" id="name" placeholder="Email">
+                
+                    <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                
+                    <div class="row justify-content-end">
+                        <input type="submit" name="enviar" id="enviar" value="Enviar">
+                    </div>
+                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade slider-portfolio__modal" id="modalImage-0" tabindex="-1" role="dialog" aria-labelledby="modalImageLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title section__title align-items-center" id="TituloModalLongoExemplo">Zukese APP</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="slider-portfolio__modal--slider slider-portfolio__modal--slider-0">
+                <img class="img-fluid" src="assets/images/bferraz.jpg">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" type="button" class="btn btn-primary">Acessar site</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+{{> ../../components/footer/footer.component.html }}
+
+{{> ../../layouts/foot.layout.html }}

@@ -1,0 +1,214 @@
+.slider-portfolio{
+    width: calc(50vw + (1130px * 0.146));
+    position: absolute;
+    top: 0;
+    left: 0;
+    .slick-track{
+        margin: 0;
+    }    
+    &__item{
+        padding: 0 13px;
+    }
+    &__content{
+        min-height: 540px;
+        position: relative;
+        width: 100%;
+    }
+    .slick-arrow{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-135%);
+        border: 1px solid $primary;
+        text-indent: -9999999px;
+        cursor: pointer;
+        outline: none;
+        &.slick-prev{
+            top: 350px;
+            left: -377px;
+            background-image: url('assets/images/arrow-left.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            &:hover{
+                filter: brightness(2000);
+            }
+        }
+        &.slick-next{
+            top: 350px;
+            left: -314px;
+            background-image: url('assets/images/arrow-right.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            &:hover{
+                filter: brightness(2000);
+            }
+        }
+        &:hover{
+            filter: brightness(2000);
+        }
+    }
+    .slick-dots{
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-top: 0;
+        li{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 6px;
+            height: 4px;
+            button{
+                background: $primary;
+                border: none;
+                margin: 0;
+                padding: 0;
+                width: 33px;
+                height: 4px;
+                border-radius: 4px;
+                cursor: pointer;
+                text-indent: -9999999px;
+                opacity: 0.48;
+                transition: $ease-out;
+            }
+            &.slick-active, &:hover{
+                button{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .slick-list {
+        padding-bottom: 70px;
+    }
+
+    .card-portfolio{
+        padding: 0 15px;
+    }
+
+    @media (min-width: 2040px) {
+        width: calc(50vw + (1130px * 0.153));
+    }
+
+    @media (max-width: 1290px){
+        padding: 0;
+    }
+
+    @media (max-width: 1126px) {
+        .slick-arrow.slick-prev {
+            top: 400px;
+            left: -350px;
+        }
+        .slick-arrow.slick-next {
+            top: 400px;
+            left: -290px;
+        }
+    }
+    @media (max-width: 1029px) {
+        .slick-arrow.slick-prev {
+            top: 420px;
+            left: -325px;
+        }
+        .slick-arrow.slick-next {
+            top: 420px;
+            left: -260px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        position: relative;
+        &__content{
+            min-height: auto;
+        }
+    }
+}
+
+.slider-portfolio__modal {
+    .slick-arrow{
+        width: 25px;
+        height: 36px;
+        position: absolute;
+        background-size: contain;
+        text-indent: -9999999px;
+        border: none;
+        padding: 0;
+        margin: 0;
+        top: 150%;
+        transform: translateY(-50%);
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+        &.slick-prev{
+            left: 0px;
+            background: #fff url("assets/images/arrow-left-small.svg") no-repeat center left 5px;
+            z-index: 1;
+        }
+        &.slick-next{
+            right: 0px;
+            background: #fff url("assets/images/arrow-right-small.svg") no-repeat center right 5px;
+        }
+        
+        &:focus{
+            outline: none;
+        }
+    }
+    .modal-dialog {
+        max-width: 810px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .modal-content {
+        position: absolute;
+        width: 100%;
+        top: 5%;
+        left: 0;
+        border: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+    .modal-body {
+        background: $clear;
+        padding: 5px;
+    }
+    .modal-header {
+        position: relative;
+    }
+    .close {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background: #ffffff;
+        color: #BBC1FF;
+        z-index: 1;
+        opacity: 1;
+        width: 35px;
+        margin: 0;
+        height: 35px;
+        transform: translateY(-50%);
+        font-weight: normal;
+        padding: 0;
+        transition: all 0.2s ease-out;
+        &:hover{
+            opacity: 1;
+            color: $primary;
+        }
+        &:not(:disabled):not(.disabled):hover, 
+        &:not(:disabled):not(.disabled):focus{
+            opacity: 1;
+            color: $primary;
+        }
+    }
+}
+.modal-footer{
+    justify-content: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+}

@@ -1,0 +1,27 @@
+$shepherd-theme-primary: #9b59b6 !default;
+$shepherd-theme-secondary: desaturate(lighten($shepherd-theme-primary, 30), 70) !default;
+$shepherd-header-background: #eeeeee !default;
+$shepherd-element-border-radius: 0 !default;
+$shepherd-button-border-radius: 0 !default;
+$use-drop-shadow: true !default;
+
+@import '~shepherd.js/src/css/variables';
+@import "~shepherd.js/src/css/helpers/popper-theme-arrows";
+
+$arrow-pointer-events: none;
+$arrow-size: 16px;
+$color-grey: #888888;
+$color-white: $clear;
+$max-width: 24em;
+$z-index: 9999;
+
+$background-color: $clear;
+$color: #444444;
+$header-background-color: #eeeeee;
+$use-drop-shadow: true;
+
+// @import '~shepherd.js/src/css/base';
+$arrow-pointer-events: none;
+$arrow-size: 16px;
+
+@include popper-theme-arrows($arrow-size: $arrow-size, $arrow-pointer-events: $arrow-pointer-events, $background-color: $background-color, $color: $color, $use-drop-shadow: $use-drop-shadow);
