@@ -146,3 +146,83 @@ function get_wistia_thumbnail_uri( $video_uri ) {
         return $wistia_response['thumbnail_url'];
     }
 }
+
+function callback_blog_filter() {
+
+    $cat    = isset( $_GET['category'] ) ? $_GET['category'] : '';
+    $search = isset( $_GET['s'] ) ? $_GET['s'] : '';
+    $pagination_counter = isset( $_GET['pagination_counter'] ) ? $_GET['pagination_counter'] : '6';
+
+    $args = array(
+        'post_type'     => 'post',
+        'order'         => 'ASC',
+        'category_name' => $cat,
+        's'             => $search,
+        'posts_per_page' => intval($pagination_counter),
+    );
+
+    $post_query = new WP_Query( $args );
+
+    ob_start();
+    loop_blog_filter($post_query);
+    $html = ob_get_contents();
+    ob_end_clean();
+
+    wp_send_json_success(array(
+        'html' => $html,
+    ));
+
+} // end callback_blog_filter;
+
+function loop_blog_filter($post_query) {
+
+    if ( $post_query->have_posts() ) {
+
+         ?>
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+         <?php
+        while ( $post_query->have_posts() ) {
+
+            $post_query->the_post();
+            ?>
+            
+                <div class="p-2">
+                    <div class="card bg-transparent" style="width: 18rem;">
+
+                        <a class="card-img-top" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                            <img class="card-img-top" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title_attribute();    ?>">
+                        </a>
+
+                      <div class="card-body">
+
+                        <!-- <h5 class="card-title text-white">
+                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <?php the_title(); ?>
+                            </a> 
+                        </h5> -->
+
+                        <h6 class="card-text text-white font-weight-light"> <?php echo get_the_excerpt(); ?> </h6>
+
+                        <small class="card-text text-white font-weight-light"> <?php the_modified_date(); ?> </small>
+
+                      </div>
+
+                    </div>
+                </div>
+            
+
+            <?php
+
+        }
+
+        ?>
+        </div>
+        <?php
+
+    }
+
+} // end loop_blog_filter;
+
+
+add_action( 'wp_ajax_blog_filter', 'callback_blog_filter' );
+add_action( 'wp_ajax_nopriv_blog_filter', 'callback_blog_filter' );

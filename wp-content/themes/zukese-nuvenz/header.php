@@ -47,12 +47,7 @@
                             </div>
                         <?php endif; ?>
                     </div>
-                    <div class="pl-3 pr-0">
-                        <button class="header__toggle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+
                         <div class="header__nav">
                             <?php
                                 wp_nav_menu(array(
